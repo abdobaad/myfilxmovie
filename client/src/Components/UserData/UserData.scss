@@ -1,0 +1,43 @@
+.user-data_container {
+  margin-top: 5rem;
+  background-color: rgb(44, 42, 42);
+  min-height: 90vh;
+
+  h1 {
+    background-color: rgb(59, 59, 59);
+    padding: 2rem;
+    color: #fff;
+    font-family: "Righteous", cursive;
+  }
+
+  .data-container {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(
+      to top left,
+      rgb(192, 41, 41),
+      rgb(255, 7, 7)
+    );
+    font-family: "Montserrat", sans-serif;
+
+    .image-container {
+      img {
+        height: 6rem;
+        margin: 2rem;
+        background-color: #fff;
+        border-radius: 50%;
+        border: none;
+      }
+    }
+  }
+
+  .favorite-container {
+    .movies-list_favorite {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border-bottom: 1px solid #333;
+      border-left: 1px solid #333;
+      padding-bottom: 5rem;
+    }
+  }
+}

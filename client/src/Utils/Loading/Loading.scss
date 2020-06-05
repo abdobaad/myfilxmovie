@@ -1,0 +1,15 @@
+.loading_container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(241, 241, 241);
+  position: absolute;
+  z-index: 20;
+
+  .loading_img {
+    height: 3rem;
+    background-color: rgb(150, 71, 71);
+  }
+}

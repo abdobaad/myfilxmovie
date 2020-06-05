@@ -1,0 +1,243 @@
+.movie_detail-container {
+  .movie_backdrop {
+    margin-top: 5rem;
+    height: 100vh;
+    -webkit-box-shadow: inset 0 -89px 44px -15px black;
+    -moz-box-shadow: inset 0 -89px 44px -15px black;
+    box-shadow: inset 0 -89px 44px -15px black;
+  }
+
+  .movie-info_container {
+    background-color: rgb(0, 0, 0);
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25rem;
+    .movie-info {
+      position: absolute;
+      width: 80%;
+      margin: -10rem auto 4rem auto;
+      /* margin-bottom: 4rem; */
+      background-color: rgba(65, 58, 58, 0.596);
+      min-height: 50rem;
+      display: flex;
+      flex-direction: column;
+
+      .top {
+        width: 100%;
+        display: flex;
+        .image-container {
+          width: 35%;
+          .poster_img {
+            //width: 30%;
+            position: relative;
+            top: -2rem;
+            height: 30rem;
+            width: 100%;
+            margin-left: 2rem;
+            width: 19rem;
+            background-size: cover;
+            box-shadow: 0px 10px 11px 2px rgba(165, 165, 165, 0.637);
+          }
+
+          .btn {
+            width: 19rem;
+            text-align: center;
+            //width: 100%;
+            margin-left: 2rem;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 3px;
+            font-size: 1.3rem;
+            color: rgb(255, 255, 255);
+            font-family: "Montserrat", sans-serif;
+            transition: 0.5s;
+          }
+          .btn:hover {
+            cursor: pointer;
+          }
+          .addToMyList {
+            background-color: rgb(252, 22, 22);
+            margin-bottom: 1rem;
+          }
+          .homePage {
+            color: rgb(255, 5, 5);
+            background-color: rgb(245, 245, 245);
+          }
+          .addToMyList:hover {
+            box-shadow: 0px 0px 19px 1px #000;
+            background-color: rgb(255, 5, 5);
+          }
+
+          .homePage:hover {
+            color: rgb(245, 245, 245);
+            background-color: rgb(255, 23, 23);
+            box-shadow: 0px 3px 9px 1px #a8a8a8;
+          }
+        }
+
+        .more-detail {
+          padding: 1rem;
+          width: 65%;
+          font-family: "Montserrat", sans-serif;
+          h2 {
+            font-family: "Righteous", cursive;
+            text-align: center;
+            font-size: 1.8rem;
+            color: #fff;
+            text-shadow: 4px 5px 7px #000;
+          }
+
+          .release_date-vote {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(249, 250, 250, 0.021);
+            .release_date {
+              font-size: 1.5rem;
+              color: rgb(241, 234, 234);
+
+              padding: 0.2rem;
+              padding-left: 1rem;
+              border-radius: 2px;
+            }
+            h3 {
+              padding-right: 1rem;
+              color: rgb(255, 13, 13);
+
+              span {
+                font-size: 1rem;
+                color: rgba(249, 250, 250, 0.692);
+                font-weight: 100;
+              }
+            }
+          }
+          .genres_list {
+            margin-top: 0.5rem;
+            font-size: 1.1rem;
+            color: rgb(241, 234, 234);
+            background: rgba(249, 250, 250, 0.021);
+            padding: 0.2rem;
+            padding-left: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            span {
+              color: #ff0000c5;
+              margin: 0.3rem;
+              padding: 0.2rem 0.4rem;
+              background-color: rgba(255, 255, 255, 0.034);
+            }
+          }
+          .movie-descreption {
+            font-family: "Montserrat", sans-serif;
+            min-height: 22.2rem;
+            background-color: rgba(95, 95, 95, 0.144);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 1.2rem;
+            padding: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .movie_detail-container {
+    .movie_backdrop {
+      /*  margin-top: 5rem;
+      height: 100vh;
+      -webkit-box-shadow: inset 0 -89px 44px -15px black;
+      -moz-box-shadow: inset 0 -89px 44px -15px black;
+      box-shadow: inset 0 -89px 44px -15px black; */
+    }
+    .movie-info_container {
+      .movie-info {
+        width: 100% !important;
+        .top {
+          .image-container {
+            width: 35%;
+            .poster_img {
+              //width: 30%;
+              position: relative;
+              top: -2rem;
+              height: 30rem;
+              width: 100%;
+              margin-left: 0.5rem;
+
+              /*   background-size: cover;
+            box-shadow: 0px 10px 11px 2px rgba(165, 165, 165, 0.637); */
+            }
+
+            .btn {
+              width: 100%;
+              margin-left: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1187px) {
+  .movie_detail-container {
+    .movie-info_container {
+      .movie-info {
+        width: 90%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .movie_detail-container {
+    .movie-info_container {
+      padding-bottom: 55rem;
+      .movie-info {
+        .top {
+          flex-direction: column;
+          align-items: center;
+
+          .image-container {
+            //width: 80%;
+            width: 20rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          .more-detail {
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .movie_detail-container {
+    .movie-info_container {
+      .movie-info {
+        .top {
+          .image-container {
+            //width: 80%;
+            width: 15rem;
+            .poster_img {
+              height: 21rem;
+            }
+          }
+          .more-detail {
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+}

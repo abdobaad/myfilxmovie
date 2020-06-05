@@ -1,0 +1,109 @@
+.actor-container {
+  width: 60%;
+  margin: 3rem auto;
+  background-color: #333333;
+  padding: 2rem;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .actor-name {
+    font-family: "Righteous", cursive;
+    text-align: center;
+    color: rgb(255, 22, 22);
+    font-weight: 500;
+    font-size: 1.3rem;
+
+    background: rgba(214, 214, 214, 0.116);
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+  }
+
+  .actor-image {
+    img {
+      height: 25rem;
+      margin: 2rem;
+      border-radius: 5px;
+    }
+  }
+
+  .actor-known_as {
+    margin: 1rem 0;
+    text-align: center;
+    width: 100%;
+
+    .list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      color: rgba(255, 7, 7, 0.842);
+
+      span {
+        padding: 0.5rem;
+        background-color: rgba(105, 105, 105, 0.151);
+        border-radius: 2px;
+        margin: 0 0.1rem;
+        color: #fff;
+      }
+    }
+  }
+
+  .actor-gender {
+    margin: 1rem 0;
+    text-align: center;
+    width: 100%;
+    span {
+      padding: 0.5rem;
+      background-color: rgba(105, 105, 105, 0.151);
+      border-radius: 2px;
+      margin: 0.2rem;
+      color: #fff;
+    }
+  }
+
+  .actor-birth {
+    margin: 1rem 0;
+    text-align: center;
+    width: 100%;
+
+    span {
+      padding: 0.5rem;
+      background-color: rgba(105, 105, 105, 0.151);
+      border-radius: 2px;
+      margin: 0 0.1rem;
+      color: #fff;
+    }
+  }
+
+  .actor-biography {
+    text-align: center;
+    margin: 2rem;
+    width: 100%;
+
+    .biography {
+      font-family: "Montserrat", sans-serif;
+      background: rgba(138, 138, 138, 0.247);
+      color: #fff;
+      border-radius: 2px;
+      padding: 2rem;
+    }
+  }
+}
+
+.title {
+  width: 100%;
+  background-color: rgba(243, 70, 70, 0.329);
+  margin-bottom: 1rem;
+  padding: 0.3rem 0;
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .actor-container {
+    margin: 0;
+    width: auto;
+  }
+}

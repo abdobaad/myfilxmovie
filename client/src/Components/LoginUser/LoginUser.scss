@@ -1,0 +1,19 @@
+.form_container {
+  flex-direction: column;
+
+  .auth_user {
+    padding: 1rem 0;
+    width: 80%;
+    font-family: monospace;
+    font-size: 1.3rem;
+    background-color: rgba(255, 178, 175, 0.719);
+    margin-bottom: 2rem;
+    text-align: center;
+
+    color: #333;
+
+    span {
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.search-container {
+  margin-top: 5rem;
+  padding-bottom: 5rem;
+  .search-remove {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    img {
+      height: 3rem;
+      transition: all 0.3;
+      border-radius: 50%;
+    }
+
+    img:hover {
+      box-shadow: 0px 0px 5px 1px #000;
+    }
+  }
+
+  .search_list {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+
+    .empty_list {
+      display: flex;
+      height: 60vh;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

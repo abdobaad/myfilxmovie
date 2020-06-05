@@ -1,0 +1,28 @@
+.alert {
+  position: absolute;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  height: 1rem;
+  width: 22rem;
+  padding: 1rem;
+  color: #fff;
+  position: absolute;
+  display: flex;
+  top: 6rem;
+  border-radius: 0 6px 6px 0;
+  font-weight: 200;
+  align-items: center;
+
+  left: 0;
+}
+.success_alert {
+  background-color: rgb(0, 177, 0);
+}
+
+.reject_alert {
+  background-color: rgb(211, 12, 12);
+}
+
+.bottom {
+  top: 38rem !important;
+}
