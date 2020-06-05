@@ -121,7 +121,7 @@ header {
       // width: 0;
       padding: 0.8rem 0.3rem;
       border-radius: 3px;
-      // display: none;
+      display: none;
       flex-direction: column;
       align-items: center;
       justify-content: center;
@@ -164,8 +164,16 @@ header {
 }
 
 @media screen and (max-width: 700px) {
-  .user_log-sign {
-    display: none !important;
+  header {
+    .header-container {
+      .user_log-sign {
+        display: none;
+      }
+
+      .tool-bar {
+        display: block;
+      }
+    }
   }
 }
 
